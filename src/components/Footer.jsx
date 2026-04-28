@@ -1,5 +1,6 @@
 import Ico, { PATHS } from "./Ico";
 import { useNavigate } from "react-router-dom";
+import Logo from "../icons/Logo.svg";
 
 export default function Footer() {
   const navigate = useNavigate();
@@ -16,9 +17,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ background: "linear-gradient(135deg,#22D3EE,#1E3A8A)" }}>
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="white" opacity="0.9" />
-                </svg>
+                <img src={Logo} alt="Kantell Freight Logo" className="w-5 h-5" />
               </div>
               <span className="font-display font-extrabold text-lg text-white">Kantell <span style={{ color: "#22D3EE" }}>Freight</span></span>
             </div>

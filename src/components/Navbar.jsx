@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate, useLocation } from "react-router-dom";
 import Ico, { PATHS } from "./Ico";
+import Logo from "../icons/Logo.svg";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -44,9 +45,7 @@ export default function Navbar() {
         <button onClick={() => handleNav("/")} className="flex items-center gap-3 group">
           <div className="w-10 h-10 rounded-xl flex items-center justify-center relative"
             style={{ background: "linear-gradient(135deg, #22D3EE, #1E3A8A)" }}>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" strokeWidth="0" fill="white" opacity="0.9" />
-            </svg>
+            <img src={Logo} alt="Kantell Freight Logo" className="w-5 h-5" />
             <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               style={{ boxShadow: "0 0 20px rgba(34,211,238,0.6)" }} />
           </div>

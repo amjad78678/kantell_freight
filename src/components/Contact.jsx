@@ -7,15 +7,22 @@ import Ico from "./Ico";
 export default function Contact() {
   const [sent, setSent] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
-  
+  const [loading, setLoading] = useState(false);
   const handleSubmit = async () => {
-    await fetch("https://script.google.com/macros/s/AKfycbz_-liugb9AKo-7Gy4cp-kA_N_dArIRCQwB8dFygZhPRafZsgppzto1-b3f1Z3Bi6Ts/exec", {
-      method: "POST",
-      mode: "no-cors",     
-      headers: { "Content-Type": "text/plain" },  
-      body: JSON.stringify(form),
-    });
-    setSent(true);
+    setLoading(true);
+    try {
+      await fetch("https://script.google.com/macros/s/AKfycbz_-liugb9AKo-7Gy4cp-kA_N_dArIRCQwB8dFygZhPRafZsgppzto1-b3f1Z3Bi6Ts/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain" },
+        body: JSON.stringify(form),
+      });
+      setSent(true);
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const inp = (name, ph, type = "text") => (
@@ -96,8 +103,22 @@ export default function Contact() {
                       onFocus={e => { e.target.style.borderColor = "#22D3EE"; e.target.style.boxShadow = "0 0 0 3px rgba(34,211,238,0.08)"; }}
                       onBlur={e => { e.target.style.borderColor = "#E2E8F0"; e.target.style.boxShadow = "none"; }} />
                   </div>
-                  <button onClick={handleSubmit} className="btn-cyan w-full justify-center py-4 text-base">
-                    Submit Request <Ico path={PATHS.arrow} size={18} color="#0B1F3A" />
+                  <button
+                    onClick={handleSubmit}
+                    disabled={loading}
+                    className={`btn-cyan w-full justify-center py-4 text-base ${loading ? "opacity-60 cursor-not-allowed" : ""
+                      }`}
+                  >
+                    {loading ? (
+                      <span className="flex items-center gap-2">
+                        <span className="w-4 h-4 border-2 border-[#0B1F3A] border-t-transparent rounded-full animate-spin"></span>
+                        Sending...
+                      </span>
+                    ) : (
+                      <>
+                        Submit Request <Ico path={PATHS.arrow} size={18} color="#0B1F3A" />
+                      </>
+                    )}
                   </button>
                 </div>
               )}
