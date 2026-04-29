@@ -2,17 +2,23 @@
 export const IMAGES = {
   hero: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1400&q=80&auto=format",
   heroAlt: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1400&q=80&auto=format",
-  airFreight: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80&auto=format",
-  oceanFreight: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80&auto=format",
-  landTransport: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80&auto=format",
+  airFreight: "https://images.unsplash.com/photo-1571086291540-b137111fa1c7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  oceanFreight: "https://images.unsplash.com/photo-1585713181935-d5f622cc2415?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  landTransport: "https://images.unsplash.com/photo-1559297434-fae8a1916a79?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   warehouse: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80&auto=format",
-  container: "https://images.unsplash.com/photo-1498855926480-d98e83099315?w=800&q=80&auto=format",
+  container: "https://images.unsplash.com/photo-1590497008432-598f04441de8?q=80&w=1691&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   port: "https://images.unsplash.com/photo-1468421870903-4df1664ac249?w=800&q=80&auto=format",
   cargo: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=800&q=80&auto=format",
   logistics: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&q=80&auto=format",
   about: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80&auto=format",
   team: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80&auto=format",
   map: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=900&q=80&auto=format",
+  about2: "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  about1: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  shipping: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80&auto=format",
+  forklift: "https://images.unsplash.com/photo-1537368789214-2587a4ef99d9?w=800&q=80&auto=format",
+  airplane: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=800&q=80&auto=format",
+  trucking: "https://images.unsplash.com/photo-1605218427306-022ba6c22a09?w=800&q=80&auto=format",
 };
 
 // ── Framer Motion Variants ────────────────────────────────────────────────────

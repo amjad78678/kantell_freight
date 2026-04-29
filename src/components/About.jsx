@@ -12,10 +12,10 @@ export default function About() {
           <motion.div variants={fadeLeft} className="relative">
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden" style={{ height: 280 }}>
-                <img src={IMAGES.port} alt="Port operations" className="w-full h-full object-cover hover:scale-105 transition-transform duration-600" />
+                <img src={IMAGES.about1} alt="Shipping operations" className="w-full h-full object-cover hover:scale-105 transition-transform duration-600" />
               </div>
               <div className="rounded-2xl overflow-hidden mt-8" style={{ height: 280 }}>
-                <img src={IMAGES.warehouse} alt="Warehouse" className="w-full h-full object-cover hover:scale-105 transition-transform duration-600" />
+                <img src={IMAGES.about2} alt="Cargo ship" className="w-full h-full object-cover hover:scale-105 transition-transform duration-600" />
               </div>
             </div>
             {/* Badge */}
